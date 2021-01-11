@@ -1,0 +1,7 @@
+#!D:\Programming software\PycharmProjects\CreateXml\venv\Scripts\python.exe
+
+from domainr import Domain
+
+
+if __name__ == '__main__':
+    Domain().main()

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DocumentElement>
+	<Table_Script>
+		<Addr>0</Addr>
+		<ModuleName>TC1</ModuleName>
+		<ParamName>TCSW</ParamName>
+		<ParamText>开关</ParamText>
+		<Cmd>=</Cmd>
+		<ValueText>1</ValueText>
+		<Var>1</Var>
+		<Count>0</Count>
+		<Reg>-1</Reg>
+	</Table_Script>
+	<Table_Script>
+		<Addr>0</Addr>
+		<ModuleName>TC1</ModuleName>
+		<ParamName>TCRAMPSPEED</ParamName>
+		<ParamText>温度限速</ParamText>
+		<Cmd>=</Cmd>
+		<ValueText>0.01</ValueText>
+		<Var>1</Var>
+		<Count>0</Count>
+		<Reg>-1</Reg>
+	</Table_Script>
+	<Table_Script>
+		<Addr>0</Addr>
+		<ModuleName>TC1</ModuleName>
+		<ParamName>TCADJUSTTEMP</ParamName>
+		<ParamText>调节温度</ParamText>
+		<Cmd>=</Cmd>
+		<ValueText>25</ValueText>
+		<Var>1</Var>
+		<Count>0</Count>
+		<Reg>-1</Reg>
+	</Table_Script>
+	<Table_Script>
+		<Addr>0</Addr>
+		<ModuleName>TC1</ModuleName>
+		<ParamName>TCACTUALTEMP</ParamName>
+		<ParamText>实际温度</ParamText>
+		<Cmd>?</Cmd>
+		<ValueText>25</ValueText>
+		<Var>0.02</Var>
+		<Count>0</Count>
+		<Reg>-1</Reg>
+	</Table_Script>
+</DocumentElement>
