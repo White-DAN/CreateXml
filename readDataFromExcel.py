@@ -611,7 +611,9 @@ class ExcelData:
     def readDatas(self):
         # f = open(r"data/test09-01测量数据.txt")
         # f = open(r"data/test10-01测量数据(0.1精度) - 数据1txt")
-        f = open(r"data/test10-01测量数据(0.1精度) - 数据4.txt")
+        # f = open(r"data/test10-01测量数据(0.1精度) - 数据4.txt")
+        # f = open(r"newData/装置搭建好脚本test09-01温度数据(1度).txt")
+        f = open(r"newData/装置搭建好脚本test10-01温度数据(0.1度).txt")
         line = f.readline()
         data_list = []
         while line:
@@ -628,7 +630,7 @@ class ExcelData:
     def plotData(self):
 
         # 基础温度
-        baseTemperature = 21
+        baseTemperature = 25
         datas = self.readExcel()
         X0 = []
         Y0 = []
@@ -673,7 +675,7 @@ class ExcelData:
         # plt.subplot(2, 2, 2)
         # 测量曲线拐点处与理论曲线平移到一起
         for i in range(0, len(X)):
-            X[i] = X[i] - 300
+            X[i] = X[i] + 100
 
         plt.figure(1)
         plt.plot(X, Y2)
@@ -764,8 +766,8 @@ class ExcelData:
 
 
 if __name__ == "__main__":
-    data_path = "原始曲线\\Te4_10.xlsx"
-    # data_path = "C:\\Users\\jiaxiong\\Desktop\\原始曲线\\Te4_10.xlsx"
+    # data_path = "原始曲线\\Te_1.xlsx"  # 1度原始数据
+    data_path = "原始曲线/Te-0.1.xlsx"  # 0.1度原始数据
     sheetname = "Sheet1"
     get_data = ExcelData(data_path, sheetname)
     datas = get_data.readExcel()
