@@ -626,21 +626,6 @@ class ExcelData:
         # print(data_array.shape)
         return data_array
 
-        # 读取0.1温度测量数据txt
-        def readDatas_01(self):
-            f1 = open(r"newData/装置搭建好脚本test10-01温度数据(0.1度).txt")
-            line = f1.readline()
-            data_list = []
-            while line:
-                num = list(map(str, line.split()))
-                data_list.append(num)
-                line = f.readline()
-            f.close()
-            data_array = np.array(data_list)
-            # print(data_array)
-            # print(data_array.shape)
-            return data_array
-
     # 提取测量数据以及画图
     def plotData(self):
         # 基础温度
@@ -724,7 +709,8 @@ class ExcelData:
 
 if __name__ == "__main__":
     # data_path = "原始曲线\\Te_1.xlsx"  # 1度原始数据
-    data_path = "原始曲线/Te-0.1.xlsx"  # 0.1度原始数据
+    # data_path = "原始曲线/Te-0.1.xlsx"  # 0.1度原始数据
+    data_path = "原始曲线/新的温度补偿曲线.xlsx"  # 0.1度原始数据
     sheetname = "Sheet1"
     get_data = ExcelData(data_path, sheetname)
     datas = get_data.readExcel()
