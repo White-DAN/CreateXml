@@ -612,7 +612,7 @@ class ExcelData:
         # f = open(r"data/test09-01测量数据.txt")
         # f = open(r"data/test10-01测量数据(0.1精度) - 数据1txt")
         # f = open(r"data/test10-01测量数据(0.1精度) - 数据4.txt")
-        # f = open(r"newData/装置搭建好脚本test09-01温度数据(1度).txt")
+        # f = open(r"newData/装置搭建好脚本test09-01温度数据(1度)-1.txt")
         f = open(r"newData/装置搭建好脚本test10-01温度数据(0.1度).txt")
         line = f.readline()
         data_list = []
@@ -626,9 +626,23 @@ class ExcelData:
         # print(data_array.shape)
         return data_array
 
+        # 读取0.1温度测量数据txt
+        def readDatas_01(self):
+            f1 = open(r"newData/装置搭建好脚本test10-01温度数据(0.1度).txt")
+            line = f1.readline()
+            data_list = []
+            while line:
+                num = list(map(str, line.split()))
+                data_list.append(num)
+                line = f.readline()
+            f.close()
+            data_array = np.array(data_list)
+            # print(data_array)
+            # print(data_array.shape)
+            return data_array
+
     # 提取测量数据以及画图
     def plotData(self):
-
         # 基础温度
         baseTemperature = 25
         datas = self.readExcel()
@@ -675,93 +689,36 @@ class ExcelData:
         # plt.subplot(2, 2, 2)
         # 测量曲线拐点处与理论曲线平移到一起
         for i in range(0, len(X)):
-            X[i] = X[i] + 100
+            X[i] = X[i] - 200
 
         plt.figure(1)
         plt.plot(X, Y2)
         # plt.plot(X, Y3)
         plt.show()
 
-    # 根据测量曲线重写原始曲线
-    def youHuaData(self):
-        # 基础温度
-        baseTemperature = 22
-        datas = self.readExcel()
+    # 读取手动探头数据
+    def readDataFromT1AndT2(self):
+        f = open(r"newData/T1和T2通道数据.txt")
+        line = f.readline()
+        data_list = []
+        while line:
+            num = list(map(str, line.split()))
+            data_list.append(num)
+            line = f.readline()
+        f.close()
+        data_array = np.array(data_list)
+        tu = data_array.shape
+        rows = tu[0]
         X = []
-        Y = []
-        #
-        for i in range(len(datas)):
-            sheet_data = datas[i]
-            for j in sheet_data.keys():
-                if j == 0:
-                    X.append(round(sheet_data[j], 3))
-                else:
-                    Y.append(round(sheet_data[j], 3) + baseTemperature)
-        newX = []
-        newY = []
-        newX.append(X[0])
-        newY.append(Y[0])
-
-        # 1表示斜率大于等于0  -1表示小于0 转向的时候改变
-        flag = 1
-        for i in range(len(X) - 1):
-            speed = abs((Y[i + 1] - Y[i]) / (X[i + 1] - X[i]))
-            # 从正斜率到负斜率
-            if flag == 1 and Y[i + 1] < Y[i] and speed < 0.02:
-                newX.append(X[i])
-                newY.append(Y[i])
-                flag = -1
-            elif flag == -1 and Y[i + 1] > Y[i] and speed < 0.02:
-                newX.append(X[i])
-                newY.append(Y[i])
-                flag = 1
-            elif speed > 0.02:
-                newX.append(X[i])
-                newY.append(Y[i])
-            else:
-                continue
-        newX.append(X[len(X) - 1])
-        newY.append(Y[len(X) - 1])
-        # plt.plot(X, Y)
-        # plt.plot(newX, newY)
-        # plt.show()
-        print(newX)
-        print(newY)
-        # 解决时延问题
-        youX = []
-        youY = []
-        youX.append(newX[0])
-        youY.append(newY[0])
-        youX.append(newX[1] - 5)
-        youY.append(newY[1])
-        k = (newY[2] - newY[1]) / (newX[2] - newX[1])
-        print(k)
-        # 斜率过大两点之间时间间隔的三分之一
-        diff = (newX[2] - newX[1]) / 3
-        print(diff)
-        youX.append(youX[1] + 2 * diff)
-        youY.append(youY[1] + 2 * diff * k)
-        # youX数组索引
-        i = 3
-        youX.append(youX[i - 1] + diff)
-        youY.append(youY[i - 1])
-        index = 3
-        i = 4
-        while index < 14:
-            # 后面一条斜率较高的曲线
-            if index == 10:
-                index += 1
-            else:
-                k = (newY[index + 1] - newY[index]) / (newX[index + 1] - newX[index])
-                nextX = youX[i - 1] + (newX[index + 1] - newX[index])
-                nextY = youY[i - 1] + k * (newX[index + 1] - newX[index])
-                youX.append(nextX)
-                youY.append(nextY)
-                index += 1
-                i += 1
-        plt.plot(X, Y)
-        plt.plot(newX, newY, marker='*')
-        plt.plot(youX, youY)
+        T1 = []
+        T2 = []
+        for i in range(0, rows):
+            row = data_array[i]
+            T1.append(float(row[0]))
+            T2.append(float(row[1]))
+            X.append(30 * i)
+        plt.plot(X, T1, 'red')
+        plt.plot(X, T2, 'black')
         plt.show()
 
 
@@ -783,4 +740,4 @@ if __name__ == "__main__":
     # print(maxData[3])
     # print(maxData[4])
     get_data.plotData()
-    # get_data.youHuaData()
+    # get_data.readDataFromT1AndT2()
