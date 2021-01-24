@@ -28,7 +28,7 @@
 		<ParamName>TCADJUSTTEMP</ParamName>
 		<ParamText>调节温度</ParamText>
 		<Cmd>=</Cmd>
-		<ValueText>22</ValueText>
+		<ValueText>25</ValueText>
 		<Var>1</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -39,7 +39,7 @@
 		<ParamName>TCACTUALTEMP</ParamName>
 		<ParamText>实际温度</ParamText>
 		<Cmd>?</Cmd>
-		<ValueText>22</ValueText>
+		<ValueText>25</ValueText>
 		<Var>0.001</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -50,107 +50,8 @@
 		<ParamName>SCRIPTDELAY</ParamName>
 		<ParamText>延时</ParamText>
 		<Cmd>=</Cmd>
-		<ValueText>599.6</ValueText>
+		<ValueText>600</ValueText>
 		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCRAMPSPEED</ParamName>
-		<ParamText>温度限速</ParamText>
-		<Cmd>=</Cmd>
-		<ValueText>0.0325</ValueText>
-		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCADJUSTTEMP</ParamName>
-		<ParamText>调节温度</ParamText>
-		<Cmd>=</Cmd>
-		<ValueText>21.311</ValueText>
-		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCACTUALTEMP</ParamName>
-		<ParamText>实际温度</ParamText>
-		<Cmd>?</Cmd>
-		<ValueText>21.311</ValueText>
-		<Var>0.001</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCRAMPSPEED</ParamName>
-		<ParamText>温度限速</ParamText>
-		<Cmd>=</Cmd>
-		<ValueText>0.022</ValueText>
-		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCADJUSTTEMP</ParamName>
-		<ParamText>调节温度</ParamText>
-		<Cmd>=</Cmd>
-		<ValueText>20.9</ValueText>
-		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCACTUALTEMP</ParamName>
-		<ParamText>实际温度</ParamText>
-		<Cmd>?</Cmd>
-		<ValueText>20.9</ValueText>
-		<Var>0.001</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCRAMPSPEED</ParamName>
-		<ParamText>温度限速</ParamText>
-		<Cmd>=</Cmd>
-		<ValueText>0.0067</ValueText>
-		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCADJUSTTEMP</ParamName>
-		<ParamText>调节温度</ParamText>
-		<Cmd>=</Cmd>
-		<ValueText>20.5</ValueText>
-		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCACTUALTEMP</ParamName>
-		<ParamText>实际温度</ParamText>
-		<Cmd>?</Cmd>
-		<ValueText>20.5</ValueText>
-		<Var>0.001</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
 	</Table_Script>
@@ -171,7 +72,7 @@
 		<ParamName>TCADJUSTTEMP</ParamName>
 		<ParamText>调节温度</ParamText>
 		<Cmd>=</Cmd>
-		<ValueText>20.834</ValueText>
+		<ValueText>24.8027</ValueText>
 		<Var>1</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -182,7 +83,7 @@
 		<ParamName>TCACTUALTEMP</ParamName>
 		<ParamText>实际温度</ParamText>
 		<Cmd>?</Cmd>
-		<ValueText>20.834</ValueText>
+		<ValueText>24.8027</ValueText>
 		<Var>0.001</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -204,7 +105,7 @@
 		<ParamName>TCADJUSTTEMP</ParamName>
 		<ParamText>调节温度</ParamText>
 		<Cmd>=</Cmd>
-		<ValueText>20.75</ValueText>
+		<ValueText>24.8586</ValueText>
 		<Var>1</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -215,7 +116,7 @@
 		<ParamName>TCACTUALTEMP</ParamName>
 		<ParamText>实际温度</ParamText>
 		<Cmd>?</Cmd>
-		<ValueText>20.75</ValueText>
+		<ValueText>24.8586</ValueText>
 		<Var>0.001</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -226,7 +127,7 @@
 		<ParamName>SCRIPTDELAY</ParamName>
 		<ParamText>延时</ParamText>
 		<Cmd>=</Cmd>
-		<ValueText>1279.3</ValueText>
+		<ValueText>573.64</ValueText>
 		<Var>1</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -237,7 +138,18 @@
 		<ParamName>SCRIPTDELAY</ParamName>
 		<ParamText>延时</ParamText>
 		<Cmd>=</Cmd>
-		<ValueText>1580.6</ValueText>
+		<ValueText>1159.84</ValueText>
+		<Var>1</Var>
+		<Count>0</Count>
+		<Reg>-1</Reg>
+	</Table_Script>
+	<Table_Script>
+		<Addr>0</Addr>
+		<ModuleName>TC1</ModuleName>
+		<ParamName>SCRIPTDELAY</ParamName>
+		<ParamText>延时</ParamText>
+		<Cmd>=</Cmd>
+		<ValueText>1377.52</ValueText>
 		<Var>1</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -248,7 +160,7 @@
 		<ParamName>TCRAMPSPEED</ParamName>
 		<ParamText>温度限速</ParamText>
 		<Cmd>=</Cmd>
-		<ValueText>0.034</ValueText>
+		<ValueText>0.0014</ValueText>
 		<Var>1</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -259,7 +171,7 @@
 		<ParamName>TCADJUSTTEMP</ParamName>
 		<ParamText>调节温度</ParamText>
 		<Cmd>=</Cmd>
-		<ValueText>21.48</ValueText>
+		<ValueText>25.0467</ValueText>
 		<Var>1</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -270,7 +182,7 @@
 		<ParamName>TCACTUALTEMP</ParamName>
 		<ParamText>实际温度</ParamText>
 		<Cmd>?</Cmd>
-		<ValueText>21.48</ValueText>
+		<ValueText>25.0467</ValueText>
 		<Var>0.001</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -281,7 +193,7 @@
 		<ParamName>TCRAMPSPEED</ParamName>
 		<ParamText>温度限速</ParamText>
 		<Cmd>=</Cmd>
-		<ValueText>0.0227</ValueText>
+		<ValueText>0.0002</ValueText>
 		<Var>1</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -292,7 +204,7 @@
 		<ParamName>TCADJUSTTEMP</ParamName>
 		<ParamText>调节温度</ParamText>
 		<Cmd>=</Cmd>
-		<ValueText>21.907</ValueText>
+		<ValueText>24.987</ValueText>
 		<Var>1</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -303,7 +215,7 @@
 		<ParamName>TCACTUALTEMP</ParamName>
 		<ParamText>实际温度</ParamText>
 		<Cmd>?</Cmd>
-		<ValueText>21.907</ValueText>
+		<ValueText>24.987</ValueText>
 		<Var>0.001</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
@@ -311,99 +223,11 @@
 	<Table_Script>
 		<Addr>0</Addr>
 		<ModuleName>TC1</ModuleName>
-		<ParamName>TCRAMPSPEED</ParamName>
-		<ParamText>温度限速</ParamText>
+		<ParamName>SCRIPTDELAY</ParamName>
+		<ParamText>延时</ParamText>
 		<Cmd>=</Cmd>
-		<ValueText>0.0065</ValueText>
+		<ValueText>135.92</ValueText>
 		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCADJUSTTEMP</ParamName>
-		<ParamText>调节温度</ParamText>
-		<Cmd>=</Cmd>
-		<ValueText>22.294</ValueText>
-		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCACTUALTEMP</ParamName>
-		<ParamText>实际温度</ParamText>
-		<Cmd>?</Cmd>
-		<ValueText>22.294</ValueText>
-		<Var>0.001</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCRAMPSPEED</ParamName>
-		<ParamText>温度限速</ParamText>
-		<Cmd>=</Cmd>
-		<ValueText>0.0016</ValueText>
-		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCADJUSTTEMP</ParamName>
-		<ParamText>调节温度</ParamText>
-		<Cmd>=</Cmd>
-		<ValueText>21.908</ValueText>
-		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCACTUALTEMP</ParamName>
-		<ParamText>实际温度</ParamText>
-		<Cmd>?</Cmd>
-		<ValueText>21.908</ValueText>
-		<Var>0.001</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCRAMPSPEED</ParamName>
-		<ParamText>温度限速</ParamText>
-		<Cmd>=</Cmd>
-		<ValueText>0.0004</ValueText>
-		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCADJUSTTEMP</ParamName>
-		<ParamText>调节温度</ParamText>
-		<Cmd>=</Cmd>
-		<ValueText>22.007</ValueText>
-		<Var>1</Var>
-		<Count>0</Count>
-		<Reg>-1</Reg>
-	</Table_Script>
-	<Table_Script>
-		<Addr>0</Addr>
-		<ModuleName>TC1</ModuleName>
-		<ParamName>TCACTUALTEMP</ParamName>
-		<ParamText>实际温度</ParamText>
-		<Cmd>?</Cmd>
-		<ValueText>22.007</ValueText>
-		<Var>0.001</Var>
 		<Count>0</Count>
 		<Reg>-1</Reg>
 	</Table_Script>
